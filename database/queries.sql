@@ -102,5 +102,30 @@
 -- SELECT Students.firstname, Students.lastname,
 --         Marks.subject, Marks.mark
 -- FROM Students JOIN Marks
--- ON Students.id=MArks.student_id;
+-- ON Students.id=Marks.student_id;
 
+-- INSERT INTO Marks(student_id, subject, mark) VALUES
+--                 (3, 'Maths', 45),
+--                 (3, 'Science', 88),
+--                 (4, 'Science', 76),
+--                 (5, 'English', 76),
+--                 (6, 'Maths', 20),
+--                 (6, 'Science', 10),
+--                 (7, 'Science', 60),
+--                 (7, 'English', 70),
+--                 (8, 'Maths', 90),
+--                 (8, 'Science', 90),
+--                 (9, 'Science', 80),
+--                 (9, 'English', 76);
+
+-- SELECT * FROM Students JOIN Marks
+-- ON Students.id=Marks.student_id;
+
+-- SELECT * FROM Students JOIN Marks
+-- ON Students.id=Marks.student_id
+-- WHERE Marks.mark >= 50;
+
+-- SELECT Students.firstname, Students.lastname, Marks.subject, Marks.mark
+-- FROM Students JOIN Marks
+-- ON Students.id=Marks.student_id
+-- WHERE Marks.subject LIKE '%English%';
